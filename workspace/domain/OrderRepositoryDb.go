@@ -17,7 +17,6 @@ import (
 type OrderRepositoryDb struct {
 	client *gorm.DB
 }
-
 func (d OrderRepositoryDb) FindAll(status string) ([]Order, *errs.AppError) {
 
 	var err error
