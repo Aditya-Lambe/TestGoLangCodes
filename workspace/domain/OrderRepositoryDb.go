@@ -75,7 +75,7 @@ func (d OrderRepositoryDb) SaveOrder(order Order) (*Order, *errs.AppError) {
 }
 
 func NeworderRepositoryDb() OrderRepositoryDb {
-	dsn := "user=postgres password=Agl@29121998 dbname=postgres sslmode=disable"
+	dsn := "user=postgres password=password@123 dbname=postgres sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	fmt.Println(db, err)
 	if err != nil {
